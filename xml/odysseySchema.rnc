@@ -1,0 +1,15 @@
+datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
+
+
+start = script
+script = element script {intro, chapterNum+}
+chapterNum = element chapterNum {n, chapter, chapTitles, (sp|action|brief)+}
+n = attribute n {xsd:int}
+chapter = element chapter {text}
+chapTitles = element chapTitles {text}
+brief = element brief {mixed {place*}}
+intro = element intro {(action | brief | sp)+}
+action = element action {mixed {place*}}
+place = element place {text} 
+sp = element sp {speaker, mixed {place*}}
+speaker = element speaker {text} 
