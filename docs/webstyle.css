@@ -9,6 +9,11 @@ body {
 	color: #555753; 
 	margin-left: 5em; 
 }
+p { 
+	margin-top: 0; 
+	text-align: justify;
+	font-size: 13px;
+}
 h1 { 
 	font: italic normal 1.4em georgia, sans-serif;
 	font-size: 35px;
@@ -22,6 +27,14 @@ h2 {
 	letter-spacing: 1px; 
 	margin-bottom: 5px; 
 	color: #844234;
+}
+h3 { 
+	font: italic normal 1.4em georgia, sans-serif;
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
+	color: #844234;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 /* NAV BAR v */
 .names{
@@ -48,14 +61,14 @@ ul {
   padding: 20px 20px 20px 20px;
   overflow: hidden;
   background-color: #844234;
-  color: #D85337;
+  color: #FF7A23;
 }
 li {
   float: left;
 }
 li a {
   display: block;
-  color: #D85337;
+  color: #FF7A23;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
