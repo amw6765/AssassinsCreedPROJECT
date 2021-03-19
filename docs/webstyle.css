@@ -1,10 +1,19 @@
-
-body {
-background-color: BurlyWood;
-color: indigo;
-font-family: arial, helvetica, sans-serif;
-}
-ol {list-style-type: lower-alpha;
-padding: 5em;
-    
-}
+html {
+	margin: 0;
+	padding: 0;
+	}
+body { 
+	font: 75% georgia, sans-serif;
+	line-height: 1.88889;
+	color: #555753; 
+	margin-left: 5em; 
+	
+	}
+h1 { 
+	font: italic normal 1.4em georgia, sans-serif;
+	font-size: 35px;
+	letter-spacing: 1px; 
+	margin-bottom: 20px; 
+	color: #844234;
+	}
+	
