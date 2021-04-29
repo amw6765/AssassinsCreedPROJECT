@@ -82,3 +82,11 @@ li a:hover {
   margin-right: auto;
   width: 75%;
 }
+/* Cytoscape Graph */
+#cy {
+   width: 65vw;
+   height:70vh;
+   position:absolute;
+   margin:auto;
+   border-style:double;
+ }
