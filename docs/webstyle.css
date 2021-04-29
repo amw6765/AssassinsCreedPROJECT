@@ -76,3 +76,9 @@ li a {
 li a:hover {
   background-color: #DF9180;
 }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
