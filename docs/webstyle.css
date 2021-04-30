@@ -10,7 +10,7 @@ body {
 	margin-left: 5em; 
 }
 p { 
-	margin-top: 0; 
+    margin-top: 0em;
 	text-align: justify;
 	font-size: 13px;
 }
@@ -86,7 +86,12 @@ li a:hover {
 #cy {
    width: 65vw;
    height:70vh;
-   position:absolute;
+   /*position:absolute;*/
    margin:auto;
    border-style:double;
+ }
+ 
+ .networkGraph {
+     padding: 5vw;
+     
  }
