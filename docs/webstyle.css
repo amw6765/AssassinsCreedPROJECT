@@ -95,3 +95,8 @@ li a:hover {
      padding: 5vw;
      
  }
+ svg {
+     overflow: visible;
+     margin:20px;
+     padding:60px 0px;
+ }
