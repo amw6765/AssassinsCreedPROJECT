@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>The Code</title>
+        <meta charset="UTF-8" />
+        <meta name="author" content="Anthony Wlodarczyk (ADD OTHER NAMES)" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="webstyle.css" />
+    </head>
+    
+    <body>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="transcript.html">Transcript</a></li>
+            <li><a href="charactersTEST.html">Characters</a></li>
+            <li><a href="visual.html">Visuals</a></li>
+            <li><a href="process.html">Process</a></li>
+        </ul>
+        <h2>The Python Graph</h2>
+        <pre><code>
+        from collections import Counter
+        import pygal
+        import spacy as spacy
+        
+        #nlp = spacy.cli.download("en_core_web_sm")
+        nlp = spacy.load('en_core_web_sm')
+        
+        
+        acDiologue = open('acDiologue.txt', 'r', encoding='utf8', errors='ignore')
+        
+        words = acDiologue.read()
+        nlpwords = nlp(words)
+        
+        def entitycollector(words):
+        ents = []
+        count = 0
+        for entity in words.ents:
+        if entity.label_ == "GPE" or entity.label_ == "LOC" or entity.label_ == "NORP":
+        if entity.text != "DR" and entity.text != "Swordfish" and entity.text != "Gla" and entity.text != "Animus" and entity.text != "Poseidon" and entity.text != "Kleon" and entity.text != "Pythia" and entity.text != "Aspasia" and entity.text != "Hippokrates" and entity.text != "Aristophanes":
+        count += 1
+        
+        ents.append(entity.text)
+        print(count, ": ", entity, entity.label_, spacy.explain(entity.label_))
+        
+        return ents</code></pre>
+        <p>Using the spaCy import we gain access to a vast language analysis tools in spaCy. The enitity collector finds different things that it recognizes like geo politcal entities and nationalities and turns them into an interactive svg graph.</p>
+        <h2>The Xquery Graph</h2>
+        <pre><code>
+query version "3.1";
+declare variable $ac := doc('/db/assassinsCreed/assassinscreedodyssey.xml');
+declare variable $intro := $ac//Q{}intro;
+declare variable $chapNums := $ac//Q{}chapterNum;
+declare variable $segments := ($intro, $chapNums);
+declare variable $spacer := 80;
+declare variable $max-Width := $segments => count() * $spacer + $spacer;
+declare variable $ActionCounts :=
+    for $s in $segments
+    let $actions := $s//Q{}action
+    return $actions => count();
+declare variable $maxActionCount := $ActionCounts => max();
+declare variable $height-spacer := -10;
+declare variable $max-Height := $maxActionCount * $height-spacer;
+declare variable $ThisFileContent :=
+for $s at $pos in $segments
+let $actions := $s//Q{}action
+let $sectionTitle :=
+    if ($s//Q{}chapTitles)
+        then $s//Q{}chapTitles/string() ! normalize-space()
+    else "intro"
+let $speakers := $s//Q{}speaker
+let $distSpeakers := $speakers ! normalize-space() => distinct-values()
+let $countSpeakers := $distSpeakers => count()
+let $countActions := $actions => count()
+let $barElongate := 10
+let $barSpace := 30
+return
+        </code></pre>
+        <p>This code grabs speakers and actions of every chapter and puts the count of each into bars of their value.</p>
+    </body>
+</html>
