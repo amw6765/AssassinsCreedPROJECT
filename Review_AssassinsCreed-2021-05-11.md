@@ -29,7 +29,7 @@ You should correct a typo on Creators page: “semseter” => “semester”
 
 The visual.html page features some intricate SVG graphs! Your write-ups could use a bit more detail to help orient us not just to what we're seeing, but *how* you derived the information. So, for the SVG graph showing actions to speakers in a chapter: You should define what you mean by “actions” in the context of this game script: do you mean action as in gameplay? It is impressive to see which portions of the game have the most dialogue!
 
-It might be interesting to combine your two SVGs to get Speeches, Actions, and Speakers at once. Yes, I know that would be a challenge to plot but I think you could do it with thinner bars to fit across the screen. We could then quickly see at a glance which chapters have the most dialogue AND the most actions (like “The Road to the Symposium”. 
+It might be interesting to combine your two SVGs to get Speeches, Actions, and Speakers at once. Yes, I know that would be a challenge to plot but I think you could do it with thinner bars to fit across the screen. We could then quickly see at a glance which chapters have the most dialogue AND the most actions (like “The Road to the Symposium”). 
 
 The explanation of the Top Ten Peoples and Places could use a little refinement: You say, “This information shows the lack of diversity of different peoples and places in Greece that existed in the same timeframe.” Doesn’t that assume that this game is a *direct representation of actual history*? (Are you sure if that’s the case?) Maybe it would be more accurate to say that this suggests a lack of diverse Mediterranean cultures represented in this game. (Why do these results seem limited——did you expect to see more cultural diversity represented?) 
 
