@@ -21,7 +21,7 @@ The site is well coordinated with its topic. The Romanesque block capitals make 
 There's an accessibility problem on the site landing page (index.html): Taking a picture of text removes that text from searching on the web. It definitely makes an impression, but it is not accessible to those who aren’t able to read images (people using screen readers, blind readers, colorblind readers who have trouble with depth perception.) But you can still overlay text on an image in HTML: A better method if you want to put an image behind text is to use it as a background on a div or section. You can even set this in CSS! Here's some good example code of a background image set in a `<div>` element:
 <https://www.freecodecamp.org/news/how-to-add-an-image-url-to-your-div/> This way, you still get the cool effect of text over image, but you can still highlight that text with your mouse and make it searchable or readable in the code view of your stie. 
 
-On the Process page you did the reverse and made a super accessible page with your code samples full blocked in the HTML. Nice work on the Code page of blocking your code using <pre> elements to preserve the formatting! That makes it easier for coders learning from your work to work with in future!
+On the Process page you did the reverse and made a super accessible page with your code samples full blocked in the HTML. Nice work on the Code page of blocking your code using `<pre>` elements to preserve the formatting! That makes it easier for coders learning from your work to work with in future!
 
 You should correct a typo on Creators page: “semseter” => “semester”
 
