@@ -7,7 +7,7 @@
 * Evaluated by: @ebeshero
 
 ### Project introduction and research questions
-Your first three pages (moving from left to right on your navigation bar) provide a helpful orientation to Assassin's Creed, the Odyssey game and its characters and your project research. The description of your project could use a little refinement to clarify what *kinds* of information you wanted to visualize in your "distant reading" text analysis, facilitated by computers. That is often best written *last* in a project, after you've set up your visualizations and analysis in place. 
+Your first three pages (moving from left to right on your navigation bar) provide a helpful orientation to *Assassin's Creed*, the *Odyssey* game and its characters and your project research. The description of your project could use a little refinement to clarify what *kinds* of information you wanted to visualize in your "distant reading" text analysis, facilitated by computers. That is often best written *last* in a project, after you've set up your visualizations and analysis in place. 
 
 The Characters page helps to orient us to the sheer number of characters we'll meet in the game. It leaves us with some questions, though:
 * How are these characters organized? Is it by first time they appear in the script? I don’t think it’s alphabetical order.   
